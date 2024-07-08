@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api", userRouter);
-app.use("/api/admin", adminRouter);
+//app.use("/api/admin", adminRouter);
 
 app.get("/", (req, res) => {
   res.send("API is running");
